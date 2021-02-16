@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/l.png',
   organizationName: 'tjnulql', // Usually your GitHub org/user name.
   projectName: 'tjnulql.github.io', // Usually your repo name.
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
       title: 'Cilium中文社区',
       logo: {
         alt: 'Cilium中文社区 Logo',
-        src: 'img/logo.svg',
+        src: 'img/l.png',
       },
       items: [
         {

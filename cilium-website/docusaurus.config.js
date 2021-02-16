@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Site',
+  title: 'Cilium中文社区',
   tagline: 'The tagline of my site',
   url: 'https://tjnulql.github.io',
   baseUrl: '/',
@@ -8,11 +8,23 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'tjnulql', // Usually your GitHub org/user name.
   projectName: 'tjnulql.github.io', // Usually your repo name.
+  plugins: [
+    [require.resolve('@cmfcmf/docusaurus-search-local'), { // warning: Use '@cmfcmf/docusaurus-search-local' (without the require.resolve) if you use Docusaurus before v2.0.0-alpha.56
+      blogBasePath: '/blog', // must correspond to the base path configured for the blog plugin
+      docsBasePath: '/docs', // must correspond to the base path configured for the docs plugin
+      indexBlog: true, // whether to index blog pages
+      indexDocs: true, // whether to index docs pages
+      indexPages: false, // whether to index static pages
+      // /404.html is never indexed
+      language: "en" // language of your documentation, see next section
+    }]
+  ],
+
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Cilium中文社区',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Cilium中文社区 Logo',
         src: 'img/logo.svg',
       },
       items: [
